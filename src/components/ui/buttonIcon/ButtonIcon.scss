@@ -1,0 +1,16 @@
+.button-icon {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    padding-block-start: 5px;
+
+    margin: 0;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+
+    &__icon {
+        // width: 20px;
+        // height: 20px;
+        padding: 0;
+    }
+}

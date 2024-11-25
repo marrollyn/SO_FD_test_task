@@ -1,0 +1,71 @@
+.sidebar__nav-buttons .nav-button__item {
+    border: none;
+    align-self: center;
+}
+
+.sidebar__menu-search .sidebar__menu__input-button {
+    position: absolute;
+    right: 4px;
+    border: none;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: row;
+    // width: 100%;
+    max-width: 336px;
+
+    &__menu {
+        transition: transform 0.3s ease;
+        // outline: solid 1px var(--border);
+        border-right: solid 1px var(--border);
+        // width: 100%;
+        width: 280px;
+
+        &-search .input-box {
+            position: relative;
+            max-width: 208px;
+            width: 100%;
+        }
+
+        &-search {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 16px;  
+            
+            &__input {
+                max-width: 208px;
+                width: 100%;
+
+            }
+        }
+    }
+}
+
+.sidebar__nav-buttons {
+    padding-block-start: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    border-right: solid 1px var(--border);
+    width: 56px;
+    // width: 100%;
+    min-height: 100vh;
+}
+
+.sidebar__menu {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateX(-10px); 
+    pointer-events: none; 
+
+    &-visible {
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: auto; 
+    }
+}
+

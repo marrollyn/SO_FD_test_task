@@ -1,0 +1,23 @@
+.sidebar-item__button-icon {
+    transition: transform 0.3s ease;
+    border: none;
+    width: 16px;
+    height: 20px;
+    padding: 0;
+
+}
+
+.sidebar__menu-item--open .sidebar-item__button-icon {
+    transform: rotate(90deg); 
+    
+}
+
+.sidebar__menu-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 8px;
+}

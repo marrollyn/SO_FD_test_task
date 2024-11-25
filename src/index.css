@@ -1,0 +1,26 @@
+@import url(./styles/fonts.css);
+@import url(./styles/globals.css);
+@import url(./styles/variables.css);
+
+body {
+  margin: 0 auto;
+  color: var(--dflt-clr);
+  background-color: var(--bg-clr);
+  font-family: var(--fontOpenSans), sans-serif;
+  font-weight: var(--fw-regular);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  width: 100%;
+  max-width: 1920px;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */

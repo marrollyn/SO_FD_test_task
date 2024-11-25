@@ -1,0 +1,93 @@
+{
+    "subgect": {
+        "label": "Тема",
+        "required": true,
+        "initialValue": "На инциденте, запросе, проблеме, в статусе закрыто некоторые поля остаются редактируемыми для агента если он Caller"
+    },
+    "status": {
+        "label": "Статус",
+        "required": false,
+        "initialValue": "Новая"
+    },
+    "description": {
+        "label": "Описание",
+        "required": true,
+        "initialValue": "Проверить ACL id=172830402014193655"
+    },
+    "product": {
+        "label": "Подтверждение пароля",
+        "required": false,
+        "initialValue": ""
+    },
+    "notes": {
+        "label": "Рабочие заметки",
+        "required": false,
+        "initialValue": ""
+    },
+    "priority": {
+        "label": "Приоритет",
+        "required": false,
+        "initialValue": "Средний"
+    },
+    "responsible": {
+        "label": "Ответственный",
+        "required": false,
+        "initialValue": "Константин Константинопольский",
+        "type": "select"
+    },
+    "group": {
+        "label": "Группа",
+        "required": false,
+        "initialValue": "Support Group",
+        "type": "select"
+    },
+    "comment": {
+        "label": "Комментарий",
+        "required": false,
+        "initialValue": "",
+        "type": "input"
+    },
+    "approvers": {
+        "label": "Согласующие ",
+        "required": false,
+        "initialValue": [
+            "Андрей Пивоваров",
+            "Максим Галактионов",
+            "Алла Лин",
+            "Константин Константинопольский Константинович",
+            "Игорь Иванченко",
+            "Юлия Эйчаровна",
+            "Артём Подпрыгайко-Саппортов",
+            "Илья Вазнец",
+            "Михаил Вортенов",
+            "Наталья Нашевна",
+            "Евгения Итамовна",
+            "Алиса Киральчук"
+        ],
+        "type": "multiselect"
+    },
+    "open-date": {
+        "label": "Когда открыто",
+        "required": false,
+        "initialValue": "Когда создано",
+        "type": "input"
+    },
+    "create-date": {
+        "label": "",
+        "required": false,
+        "initialValue": "22.10.2024",
+        "type": "input"
+    },
+    "opener": {
+        "label": "Кем открыто",
+        "required": false,
+        "initialValue": "Андрей Пивоваров",
+        "type": "select"
+    },
+    "creator": {
+        "label": "Кем создано",
+        "required": false,
+        "initialValue": "Андрей Пивоваров",
+        "type": "select"
+    }
+}

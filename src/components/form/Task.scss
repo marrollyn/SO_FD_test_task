@@ -1,0 +1,44 @@
+.form {
+
+    &__title {
+        font-family: "Montserrat", sans-serif;
+        font-size: 24px;
+        font-weight: var(--fw-bold);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+    }
+
+    &-header__title {
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+    }
+
+    &-container {
+        width: 100%;
+        position: relative;
+    }
+
+    
+
+    &-header-fixed {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    }
+}
+
+.form-header {
+    background-color: white; /* Цвет фона шапки */
+    transition: box-shadow 0.3s ease; /* Плавный переход для тени */
+    width: 100%; /* Ширина шапки равна ширине контейнера */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+// .form__title{
+
+// }
