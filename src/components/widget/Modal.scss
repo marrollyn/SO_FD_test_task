@@ -1,0 +1,121 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2000;
+}
+
+.modal-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    margin: auto 0;
+    padding: 40px 40px 60px;
+    background-color: var(--bg-clr);
+    border-radius: 4px;
+    max-width: 800px;
+    width: 100%;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.modal__header {
+    display: flex;
+    align-items: center;
+    min-height: 64px;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 50px;
+}
+
+.modal__title {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+
+    &__button--close {
+        display: none;
+    }
+}
+
+.modal__content .form__fields {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "subgect"
+        "status"
+        "description"
+        "product"
+        "notes"
+        "priority"
+        "responsible"
+        "group"
+        "comment"
+        "approvers"
+        "open-date"
+        "create-date"
+        "opener"
+        "creator";
+}
+
+.form-header__title-btns-mobile-modal {
+    display: none;
+}
+
+@media (max-width:767px) {
+    .modal-box {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .modal__title__button--close {
+        display: block;
+    }
+
+    .modal__header {
+        height: 56px;
+        padding: 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .modal-box {
+        width: 100%;
+        padding: 0 16px 16px;
+    }
+
+    .modal-box .form-header__title-btns-pc {
+        display: none
+    }
+
+    .form-header__title-btns-pc-modal {
+        display: none;
+    }
+
+    .form-header__title-btns-mobile-modal {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-top: 16px;
+    }
+
+    #task-modal-form {
+        padding: 0;
+    }
+
+    .modal__content .form__title {
+        padding-block-start: 16px;
+    }
+}

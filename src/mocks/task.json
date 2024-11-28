@@ -1,54 +1,70 @@
-{
-    "subgect": {
+[
+    {
+        "name": "subgect",
         "label": "Тема",
         "required": true,
-        "initialValue": "На инциденте, запросе, проблеме, в статусе закрыто некоторые поля остаются редактируемыми для агента если он Caller"
+        "initialValue": "На инциденте, запросе, проблеме, в статусе закрыто некоторые поля остаются редактируемыми для агента если он Caller",
+        "type": "text"
     },
-    "status": {
+    {
+        "name": "status",
         "label": "Статус",
         "required": false,
-        "initialValue": "Новая"
+        "initialValue": "Новая",
+        "type": "text"
     },
-    "description": {
+    {
+        "name": "description",
         "label": "Описание",
         "required": true,
-        "initialValue": "Проверить ACL id=172830402014193655"
+        "initialValue": "Проверить ACL id=172830402014193655",
+        "type": "text"
     },
-    "product": {
-        "label": "Подтверждение пароля",
+    {
+        "name": "product",
+        "label": "Продукт",
         "required": false,
-        "initialValue": ""
+        "initialValue": "Platform",
+        "type": "search"
     },
-    "notes": {
+    {
+        "name": "notes",
         "label": "Рабочие заметки",
         "required": false,
-        "initialValue": ""
+        "initialValue": "",
+        "type": "text"
     },
-    "priority": {
+    {
+        "name": "priority",
         "label": "Приоритет",
         "required": false,
-        "initialValue": "Средний"
+        "initialValue": "Средний",
+        "type": "text"
     },
-    "responsible": {
+    {
+        "name": "responsible",
         "label": "Ответственный",
         "required": false,
         "initialValue": "Константин Константинопольский",
-        "type": "select"
+        "type": "single-selector"
     },
-    "group": {
+    {
+        "name": "group",
         "label": "Группа",
         "required": false,
         "initialValue": "Support Group",
-        "type": "select"
+        "type": "single-selector"
     },
-    "comment": {
+    {
+        "name": "comment",
         "label": "Комментарий",
         "required": false,
         "initialValue": "",
-        "type": "input"
+        "type": "text"
     },
-    "approvers": {
-        "label": "Согласующие ",
+    {
+        "name": "approvers",
+        "label": "Согласующие",
         "required": false,
         "initialValue": [
             "Андрей Пивоваров",
@@ -64,30 +80,34 @@
             "Евгения Итамовна",
             "Алиса Киральчук"
         ],
-        "type": "multiselect"
+        "type": "multi-selector"
     },
-    "open-date": {
+    {
+        "name": "open-date",
         "label": "Когда открыто",
         "required": false,
-        "initialValue": "Когда создано",
-        "type": "input"
+        "initialValue": "",
+        "type": "date"
     },
-    "create-date": {
-        "label": "",
+    {
+        "name": "create-date",
+        "label": "Когда создано",
         "required": false,
         "initialValue": "22.10.2024",
-        "type": "input"
+        "type": "date"
     },
-    "opener": {
+    {
+        "name": "opener",
         "label": "Кем открыто",
         "required": false,
         "initialValue": "Андрей Пивоваров",
-        "type": "select"
+        "type": "single-selector"
     },
-    "creator": {
+    {
+        "name": "creator",
         "label": "Кем создано",
         "required": false,
         "initialValue": "Андрей Пивоваров",
-        "type": "select"
+        "type": "single-selector"
     }
-}
+]

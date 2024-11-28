@@ -1,0 +1,11 @@
+.form-header__title-btns{
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+@media (max-width:767px) {
+    .form-header__title-btns-mobile {
+        display: flex;
+    }
+}

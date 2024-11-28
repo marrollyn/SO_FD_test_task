@@ -1,0 +1,11 @@
+.form-item__search-input {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &__content-box{
+        width: 100%;
+    }
+}

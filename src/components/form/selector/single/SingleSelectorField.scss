@@ -1,0 +1,72 @@
+.select-single {
+
+    &__btn-box {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+    }
+
+    &__input {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 4px;
+
+        &-box {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            border-radius: 4px;
+            gap: 4px
+        }
+
+        &__item-box {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            align-items: center;
+            min-height: 20px;
+            gap: 8px;
+            box-sizing: border-box;
+            border: 1px solid var(--accent-clr);
+            border-radius: 4px;
+            background: var(--lite-accent-clr);
+            padding: 2px 8px;
+        }
+
+        &-content-box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            border-radius: 4px;
+            flex-wrap: wrap;
+            border: 1px solid var(--border);
+            gap: 4px;
+            padding: 2px 30px 2px 2px;
+            background-color: var(--input-bg-clr);
+            position: relative;
+            width: 100%;
+        }
+
+        &-cls-btn {
+            position: absolute;
+            border: none;
+            right: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    &__item-button {
+        width: 16px;
+        height: 16px;
+        border: none;
+        margin-top: -10px;
+    }
+}

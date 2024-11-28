@@ -14,24 +14,5 @@
 	--icon-dsbl-clr: #ABB1BA;
 	--icon-accent-clr: #005999;
 	--border: #D5D8DD;
-
-
-	--text-color: #f1b2ce;
-	--accent-color: #ff0070;
-	--accent-decoration-color: #ff0070;
-	--accent-text-color: #000028;
-	--bg-color: #000028;
-	--font-size: 1.125rem;
-	--header-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-	--header-color: #db00ff;
-	--margin-inline: 10px;
-	--title-shadow: #ff0070;
-	--title-shadow-another: #ff8dcb;
-	--btn-hover-outln-clr: rgb(50 49 45 / 0.4);
-}
-
-@media (min-width: 768px) {
-	:root {
-		--header-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-	}
+	--input-bg-clr:#fcfcfd;
 }

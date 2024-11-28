@@ -1,14 +1,11 @@
 .header {
     padding: 16px 8px;
     height: 48px;
-    // min-height: 48px;
-    // height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    // outline: solid 1px var(--border);
     border-block-end: solid 1px var(--border);;
     align-content: center;
     align-items: center;
@@ -48,7 +45,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        gap: 10px;
+        gap: 8px;
     }
 
     &__content-box {
@@ -65,4 +62,33 @@
     position: absolute;
     border: none;
     right: 4px;
+}
+
+@media (max-width:991px) {
+    .header {
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+@media (max-width:767px) {
+    .header {
+
+        justify-content: flex-end;
+        height: 56px;
+
+        &-user__name {
+            display: none;
+        }
+
+        &__input-box {
+            display: none;
+        }
+
+        &__logo{
+            display: none;
+        }
+    }
+
+
 }

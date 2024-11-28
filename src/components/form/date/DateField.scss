@@ -1,0 +1,15 @@
+.form-item__date {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &__content-box{
+        width: 100%;
+    }
+}
+
+.form-item__date__content-box .input-box {
+    justify-content: flex-end;
+}

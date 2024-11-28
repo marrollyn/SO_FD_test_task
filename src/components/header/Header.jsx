@@ -1,6 +1,5 @@
 import logo from "../../assets/icons/header_logo.svg";
 import React from "react";
-// import { ReactComponent as MyIcon } from "../../assets/icons/header_logo.svg";
 import "./Header.scss"
 import Input from "../ui/input/Input"
 import { ReactComponent as SearchIcon } from "../../assets/icons/search_icon.svg";
@@ -8,7 +7,6 @@ import { ReactComponent as SettingIcon } from "../../assets/icons/settings_icon.
 import ButtonIcon from "../ui/buttonIcon/ButtonIcon";
 import avatar from "../../assets/avatar.png"
 import data from "../../mocks/user.json";
-
 
 function Header() {
     const user = data[0];
@@ -36,9 +34,7 @@ function Header() {
                         <SettingIcon/>
                     </ButtonIcon>
                 </div>
-
             </div>
-
         </header>
 
     );

@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-// import sidebarFavIcon from "../../assets/icons/sidebar_favorite.svg"
-// import sidebarNavIcon from "../../assets/icons/sidebar_nav.svg"
+import React, { useState, useEffect } from "react";
 import "./Sidebar.scss"
 import ButtonIcon from "../ui/buttonIcon/ButtonIcon";
 import SidebarItem from "./sidebarItem/SidebarItem";
@@ -24,18 +22,37 @@ function Sidebar() {
         setIsOpen(prev => !prev);
     }
 
+    const handleResize = () => {
+        if (window.innerWidth <= 991) { 
+            setIsOpen(false);
+        } else {
+            setIsOpen(true);
+        }
+    };
+
+    useEffect(() => {
+
+        window.addEventListener('resize', handleResize);
+
+        handleResize();
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
         <nav className="sidebar">
             <section className="sidebar__nav-buttons">
                 <ButtonIcon
-                    className="nav-button__item"
+                    className="nav-button__item nav-button__item-menu"
                     width="24"
                     height="24"
                     onClick={changeSidebarOpen}>
                     <SidebarNavIcon fill={isOpen ? "var(--icon-accent-clr)" : "var(--icon-dflt-clr)"} />
                 </ButtonIcon>
                 <ButtonIcon
-                    className="nav-button__item"
+                    className="nav-button__item nav-button__item-fav"
                     width="24"
                     height="24"
                     onClick={handleFavClick}>
@@ -70,12 +87,8 @@ function Sidebar() {
                     </ul>
                 </nav>
             </section>)}
-
-
-
         </nav>
     )
 }
-
 
 export default Sidebar;

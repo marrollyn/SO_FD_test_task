@@ -1,0 +1,194 @@
+.form {
+
+    &__title {
+        font-family: "Montserrat", sans-serif;
+        font-size: 24px;
+        font-weight: var(--fw-bold);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        margin-block-end: 52px;
+        text-align: start;
+    }
+
+    &-header__title {
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+
+        &-box {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: center;
+        }
+    }
+
+    &-container {
+        width: 100%;
+        position: relative;
+    }
+
+    &-header-fixed {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.form-header {
+    background-color: white;
+    transition: box-shadow 0.3s ease;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.label-required-item::before {
+    content: "* ";
+    color: var(--important-marker-clr);
+}
+
+.form {
+
+    padding: 16px;
+
+    &__fields {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 44px;
+        column-gap: 16px;
+        grid-template-areas:
+            "subgect status"
+            "description product"
+            "notes priority"
+            "responsible group"
+            "comment comment"
+            "approvers approvers"
+            "open-date create-date"
+            "opener creator";
+    }
+
+    &-item__subgect {
+        grid-area: subgect;
+    }
+
+    &-item__status {
+        grid-area: status;
+    }
+
+    &-item__description {
+        grid-area: description;
+    }
+
+    &-item__product {
+        grid-area: product;
+    }
+
+    &-item__notes {
+        grid-area: notes;
+    }
+
+    &-item__priority {
+        grid-area: priority;
+    }
+
+    &-item__responsible {
+        grid-area: responsible;
+    }
+
+    &-item__group {
+        grid-area: group;
+    }
+
+    &-item__comment {
+        grid-area: comment;
+    }
+
+    &-item__approvers {
+        grid-area: approvers;
+    }
+
+    &-item__open-date {
+        grid-area: open-date;
+    }
+
+    &-item__create-date {
+        grid-area: create-date;
+    }
+
+    &-item__opener {
+        grid-area: opener;
+    }
+
+    &-item__creator {
+        grid-area: creator;
+    }
+}
+
+.form-header__title-btns-mobile-dflt {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .form__fields{
+        row-gap: 44px;
+        column-gap: 0px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "subgect"
+        "status"
+        "description"
+        "product"
+        "notes"
+        "priority"
+        "responsible"
+        "group"
+        "comment"
+        "approvers"
+        "open-date"
+        "create-date"
+        "opener"
+        "creator";
+    }
+}
+
+@media (max-width:767px) {
+
+
+    .form-header__title-btns-pc-dflt {
+        display: none
+    }
+
+    .form-header__title-box {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .form-header__title-btns-mobile-dflt {
+        display: flex;
+        gap: 16px;
+        justify-content: space-between;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    .form-header__title-btns-mobile-dflt {
+        flex-direction: column;
+    }
+
+    .form__fields{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+

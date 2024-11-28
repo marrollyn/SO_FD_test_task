@@ -1,6 +1,8 @@
 .sidebar__nav-buttons .nav-button__item {
     border: none;
     align-self: center;
+    width: 56px;
+    height: 56px;
 }
 
 .sidebar__menu-search .sidebar__menu__input-button {
@@ -12,14 +14,11 @@
 .sidebar {
     display: flex;
     flex-direction: row;
-    // width: 100%;
     max-width: 336px;
 
     &__menu {
         transition: transform 0.3s ease;
-        // outline: solid 1px var(--border);
         border-right: solid 1px var(--border);
-        // width: 100%;
         width: 280px;
 
         &-search .input-box {
@@ -34,25 +33,22 @@
             flex-wrap: wrap;
             justify-content: space-between;
             padding: 16px;  
+            border-block-end: solid 1px var(--border);
             
             &__input {
                 max-width: 208px;
                 width: 100%;
-
             }
         }
     }
 }
 
 .sidebar__nav-buttons {
-    padding-block-start: 16px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 10px;
     border-right: solid 1px var(--border);
     width: 56px;
-    // width: 100%;
     min-height: 100vh;
 }
 
@@ -69,3 +65,25 @@
     }
 }
 
+@media (max-width:767px) {
+    .nav-button__item-menu {
+        position: absolute;
+        top:0;
+        left: 4px;
+    }
+
+    .nav-button__item-fav {
+        display: none;
+    }
+
+    .sidebar__nav-buttons {
+        width: 0;
+        border: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .sidebar__menu {
+        width: 100vw;
+    }
+}
