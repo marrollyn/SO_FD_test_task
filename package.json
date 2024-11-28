@@ -2,6 +2,7 @@
   "name": "so_fd_test_task",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://marrollyn.github.io/SO_FD_test_task",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
